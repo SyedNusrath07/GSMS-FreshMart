@@ -69,12 +69,12 @@ const Header: React.FC<HeaderProps> = ({
               className="p-2 text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
               aria-label="Open menu"
             >
-              <Filter className="h-6 w-6" />
+              <Filter className="h-5 w-5" />
             </button>
           </div>
 
           {showSearch && (
-          <div className="flex-1 max-w-2xl mx-8 sm:max-w-full sm:mx-2">
+          <div className="flex-1 max-w-2xl mx-8 sm:max-w-full sm:mx-2 xs:mx-1 xs:max-w-full">
             <SearchBar onSearchChange={onSearchChange} />
           </div>
           )}

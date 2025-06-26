@@ -49,8 +49,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onQuickView }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-100 dark:border-gray-700 sm:max-w-full sm:w-full">
-      <div className="relative h-48 overflow-hidden">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group border border-gray-100 dark:border-gray-700 sm:max-w-full sm:w-full xs:max-w-full xs:w-full">
+      <div className="relative h-48 overflow-hidden xs:h-40">
         <img
           src={product.image}
           alt={product.name}
