@@ -62,12 +62,24 @@ const Header: React.FC<HeaderProps> = ({
               </div>
             </button>
           </div>
+          {/* Mobile menu button */}
+          <div className="lg:hidden flex items-center">
+            <button
+              onClick={onFilterClick}
+              className="p-2 text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400 transition-colors rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-label="Open menu"
+            >
+              <Filter className="h-6 w-6" />
+            </button>
+          </div>
 
           {showSearch && (
-            <div className="flex-1 max-w-2xl mx-8">
-              <SearchBar onSearchChange={onSearchChange} />
-            </div>
+          <div className="flex-1 max-w-2xl mx-8 sm:max-w-full sm:mx-2">
+            <SearchBar onSearchChange={onSearchChange} />
+          </div>
           )}
+          {/* Responsive adjustments */}
+          {/* Removed invalid jsx style tag and replaced with Tailwind responsive classes */}
 
           <div className="flex items-center space-x-2">
             {/* Dark Mode Toggle */}
